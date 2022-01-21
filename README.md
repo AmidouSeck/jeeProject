@@ -2,7 +2,7 @@
 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)  [![forthebadge](http://forthebadge.com/images/badges/powered-by-electricity.svg)](http://forthebadge.com)
 
-L’objectif de ce projet est de mettre en œuvre les compétences acquises dans le cours d’architecture logicielle. Il est découpé en trois parties que vous devrez faire intégralement.
+L’objectif de ce projet est de mettre en œuvre les compétences acquises dans le cours Programmation en Java EE.
 
 ## Pour commencer
 ##Lien du tutoriel Youtube
@@ -11,40 +11,13 @@ https://www.youtube.com/watch?v=p2T1cR0EySE
 
 
 ### Contenu du projet
-
-
-## Site Web
-Il s’agira de concevoir un site d’actualité disposant des fonctionnalités suivantes :
-- La page d’accueil devra afficher la liste des derniers articles avec une description sommaire de chacun d’entre eux. Des boutons « suivant » et « précédent » devront permettre de parcourir les articles selon leur ancienneté.
-- Le clic sur le titre d’un article devra permettre de le consulter en détail.
-- On devrait avoir la possibilité de consulter les articles par catégorie.
-- Trois types de profils utilisateurs devront être pris en compte :
- Les visiteurs simples : Ils peuvent accéder à toutes les fonctionnalités applicatives liées à la consultation des articles (affichage par catégorie, etc.)
- Les éditeurs : Leur rôle est de maintenir le contenu du site. De ce fait, en plus de ce que peuvent faire les visiteurs, Ils ont la possibilité, après authentification, de gérer (lister, ajouter, supprimer ou modifier) les articles et les catégories.
- Les administrateurs sont des éditeurs qui ont la possibilité de gérer les données des utilisateurs. Ainsi, ils ont accès à toutes les fonctionnalités applicatives et peuvent donc ajouter, lister, modifier ou supprimer des utilisateurs. De même, ils sont chargés de l’ajout et de la suppression des jetons d’authentification permettant d’accéder aux services web à accès restreint.
-
-## Services Web
-En plus des fonctionnalités directement accessibles depuis un navigateur, l’application devra exposer un ensemble de services web afin que ses fonctionnalités métiers soient accessibles à d’autres applications. De ce fait, il vous est demandé de :
-- Créer un service web SOAP permettant de :
- lister, ajouter, supprimer ou modifier des utilisateurs. L’accès à ce service requiert un
-jeton d’authentification qu’un administrateur devra au préalable générer depuis la
-page d’administration du site
- D’authentifier un utilisateur suivant un login et un mot de passe fourni
-- Créer un service web REST permettant de :
-     
- Récupérer la liste de tous les articles. Cette liste devra être retournée au format XML ou JSON selon le choix de l’utilisateur.
- récupérer la liste des articles regroupés en catégories (format XML ou JSON au choix)
- récupérer la liste des articles appartenant à une catégorie fournie par l’utilisateur
-(format XML ou JSON au choix)
-
-
-## Application cliente
-Créer une application Java (ou Python) permettant de gérer les utilisateurs. Quand l’application est lancée, elle demande à l’utilisateur son login et son mot de passe et invoque ainsi le service web d’authentification pour voir si l’utilisateur a les droits d’administration lui permettant d’agir sur les utilisateurs. Le cas échéant, l’application devra fournir un accès complet aux fonctionnalités de gestion des utilisateurs et ce, en utilisant les services web adéquats.
-
+On désire concevoir une application Web qui gère des albums photos d’utilisateurs. Un visiteur du site pourra, sans être authentifié, voir les photos qui sont en accès libre. Les photos sont placées dans des albums permettant de grouper les photos d’un même thème (vacance, sport, etc.).
+Un album peut être déclaré public ou privé. Si l’album est privé, seuls les utilisateurs enregistrés et autorisés par le propriétaire de l’album peuvent le consulter. S’il est public, il est accessible à tous les utilisateurs et à tous les visiteurs, même ceux qui ne sont pas identifiés. Seul le propriétaire de l’album peut faire des modifications (insertion d’images, suppression d’images, modification d’images). Enfin, un utilisateur peut créer autant d’albums qu’il souhaite.
+Une image appartient nécessairement à un album. De ce fait, elle appartient également à un utilisateur (le propriétaire de l’album). Elle possède un titre, une description, une hauteur et une largeur, des mots- clés, une date de création et une date de mise à jour, et bien sûr, un fichier image. Lors de la présentation de la liste des images, si on clique sur l’image, elle s’affiche sous forme de popup. Si on clique sur le nom de l’album à laquelle elle appartient, le détail de l’album s’affiche, et si on clique sur le nom de l’image, les informations concernant l’image s’affichent.
+Les utilisateurs de l’application sont de deux types : les administrateurs et les utilisateurs simples. En effet, les visiteurs qui s’inscrivent deviennent des utilisateurs simples et peuvent ainsi publier des albums et des photos. Quant aux administrateurs, en plus de partager des albums, ils ont la possibilité de gérer les utilisateurs. Ainsi, ils peuvent ajouter, modifier ou supprimer des utilisateurs ainsi que tous les albums et photos qui leur sont associés. Toutefois, un compte administrateur ne peut être créé que par un administrateur. Ce qui veut dire qu’au moins un administrateur devra préalablement être inscrit dans l’application.
 ### Installation
 
-Pour l'installations de l'ensemble des packages utilisés dans les services web et l'application cliente saisir la commande:
-pip install -r requirements.txt en se plaçant dans le répertoire djangoCrudExample
+Vous devez installer TomCat version 9 ou plus pour pouvoir démarrer le projet.
 
 ## Démarrage
 
@@ -53,10 +26,10 @@ pip install -r requirements.txt en se plaçant dans le répertoire djangoCrudExa
 
 ## Fabriqué avec
 
-* [Php](https://www.php.net/) - langage de script généraliste populaire particulièrement adapté au développement Web
-* [Django](https://www.djangoproject.com/) - Framwork python qui nous a servi de mettre en place l'app cliente
+* [Java EE](https://www.oracle.com/java/technologies/java-ee-glance.html) - Java SE Jakarta EE Java ME JavaFX Java Card Jakarta EE, est une spécification pour la plate-forme Java d'Oracle, destinée aux applications d'entreprise.
+* [Tomcat](https://tomcat.apache.org/) - Apache Tomcat ou simplement Tomcat est un serveur d'applications, plus précisément un conteneur web libre de servlets et JSP
 * [MySql](https://www.mysql.com/fr/) - pur la base de données
-* [VsCode](https://code.visualstudio.com/) - Éditeur de code
+* [Eclipse](https://www.eclipse.org/) - Éditeur de code
 
 
 ## Auteurs
