@@ -34,7 +34,7 @@ Vous devez installer TomCat version 9 ou plus pour pouvoir démarrer le projet.
 ## Auteurs
 
 * **Mohamed Amidou Seck** _alias_ [@AmidouSeck](https://github.com/AmidouSeck)
-* **Pape Assane Thiobane** _alias_ [@Modou105](https://github.com/Modou105)
+* **Pape Assane Thiobane** _alias_ [@papaassane](https://github.com/papaassane)
 * **Elhadji Mamadou Doudou Coulibaly** _alias_ [@ElhadjiMamadouCoulibaly](https://github.com/ElhadjiMamadouCoulibaly)
 
 ## License
