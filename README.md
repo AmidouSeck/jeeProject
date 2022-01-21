@@ -27,7 +27,7 @@ Vous devez installer TomCat version 9 ou plus pour pouvoir démarrer le projet.
 
 * [Java EE](https://www.oracle.com/java/technologies/java-ee-glance.html) - Java SE Jakarta EE Java ME JavaFX Java Card Jakarta EE, est une spécification pour la plate-forme Java d'Oracle, destinée aux applications d'entreprise.
 * [Tomcat](https://tomcat.apache.org/) - Apache Tomcat ou simplement Tomcat est un serveur d'applications, plus précisément un conteneur web libre de servlets et JSP
-* [MySql](https://www.mysql.com/fr/) - pur la base de données
+* [MySql](https://www.mysql.com/fr/) - pour la base de données
 * [Eclipse](https://www.eclipse.org/) - Éditeur de code
 
 
