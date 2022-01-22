@@ -16,10 +16,13 @@ public class AlbumDao {
 	public static void ajouter(Albums album) {
 		Connection conn = Database.getConnection();
 		try {
-			PreparedStatement ps = conn.prepareStatement("insert into albuums values (?,?,?)");
-			ps.setString(1, album.getTheme());
-			ps.setString(2, album.getVisibility());
-			ps.setInt(3, album.getId_proprietaire());
+			System.out.println("ALL VALUES: "+album.getTheme()+"--"+album.getVisibility()+"--"+album.getId_proprietaire()+"--"+album.getCover());
+			PreparedStatement ps = conn.prepareStatement("insert into albums values (?,?,?,?,?)");
+			ps.setInt(1, album.getId());
+			ps.setString(2, album.getTheme());
+			ps.setString(3, album.getVisibility());
+			ps.setInt(4, album.getId_proprietaire());
+			ps.setString(5, album.getCover());
 			ps.executeUpdate();
 			ps.close();
 		}catch(SQLException e){
@@ -53,7 +56,7 @@ public class AlbumDao {
 		return publicAlbums;
 	}
 	
-	// la liste des albums autirisés pour un utilisateur donné
+	// la liste des albums autirisï¿½s pour un utilisateur donnï¿½
 	public static ArrayList<Albums> getAuthorizedAlbums(int userId){
 		Connection conn = Database.getConnection();
 		ArrayList<Albums> authorizedAlbums = new ArrayList<Albums>();

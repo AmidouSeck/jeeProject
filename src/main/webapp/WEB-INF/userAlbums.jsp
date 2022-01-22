@@ -49,7 +49,7 @@
     <header>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="<c:url value="/"/>">E-Album</a>
+          <a class="navbar-brand" href="<c:url value="/"/>">MGLSI Album Photo</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -64,11 +64,10 @@
                 </li>
                 <c:if test="${ sessionScope.user.role == 'admin'}">
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Utilisateurs</a>
+                    <a class="nav-link" aria-current="page" href="user">Utilisateurs</a>
                   </li>  
-                </c:if>
-                       
-              </c:if>
+                </c:if>  
+              </c:if> 
             </ul>
             
             <div class="d-flex">
@@ -106,36 +105,36 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
-            <img src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/12/2017/03/Port_2_Background.jpg" alt="">
+            <img src="https://cdn.pixabay.com/photo/2018/07/17/14/43/banner-3544296_1280.jpg" alt="">
 
             <div class="container">
               <div class="carousel-caption">
-                <h1>Example headline.</h1>
-                <p>Some representative placeholder content for the first slide of the carousel.</p>
+                <h1>MGLSI Album Photo</h1>
+                <p>Decouvrez MGLSI Album Photo</p>
                 
               </div>
             </div>
           </div>
           <div class="carousel-item">
             <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
-            <img src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/12/2017/03/Port_2_Background.jpg" alt="">
+            <img src="https://cdn.pixabay.com/photo/2014/11/03/10/44/camera-514992_1280.jpg" alt="">
 
             <div class="container">
               <div class="carousel-caption">
-                <h1>Another example headline.</h1>
-                <p>Some representative placeholder content for the second slide of the carousel.</p>
+                <h1>MGLSI Album Photo</h1>
+                <p>Creer vos albums personnalises sans limites avec une large gamme d'images de qualite</p>
                 
               </div>
             </div>
           </div>
           <div class="carousel-item">
             <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
-            <img src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/12/2017/03/Port_2_Background.jpg" alt="">
+            <img src="https://cdn.pixabay.com/photo/2015/07/27/20/16/book-863418_1280.jpg" alt="">
 
             <div class="container">
               <div class="carousel-caption">
-                <h1>Another example headline.</h1>
-                <p>Some representative placeholder content for the second slide of the carousel.</p>
+                <h1>MGLSI Album Photo</h1>
+                <p>Inscrivez-vous pour decouvrir toutes nos fonctionnalites</p>
                 
               </div>
             </div>
@@ -178,10 +177,10 @@
                         <p class="card-text"><a href="albums?id=<c:out value="${album.id }"/>"><c:out value="${album.theme }"/></a></p>
                         <div class="d-flex justify-content-between align-items-center">
                           <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Voir</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Modifier</button>
                           </div>
-                          <small class="text-muted">9 mins</small>
+                          <small class="text-muted">il y a 1 semaine</small>
                         </div>
                       </div>
                     </div>
@@ -192,23 +191,82 @@
           </div>
 
           <div style="margin-top:1rem;" >
-            <a class="btn btn-primary" data-toggle="modal" data-target="#addAlbum">
-                <i class="fa fa-plus"></i>
-                Ajouter
-            </a>
+            <button style="position: fixed;
+  bottom: 8%;
+  right: 3%;
+  border-radius: 100%;
+  
+  width: 60px;
+  height: 60px;
+
+  -webkit-animation: breathing 2s ease-out infinite normal;
+  animation: breathing 2s ease-out infinite normal;
+  font-family:'Lantinghei SC';
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  @-webkit-keyframes breathing {
+0% {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+25% {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+60% {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+100% {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+}
+
+@keyframes breathing {
+0% {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+25% {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+60% {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+100% {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+} " class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addModal">
+                <i  class="fa fa-plus"></i>
+                
+            </button>
 
             <!-- Album modal -->
-            <div id="addAlbum" class="modal fade" role="dialog">
+            <div id="addModal" class="modal fade" role="dialog">
                 <div class="modal-dialog">
               
                   <!-- Modal content-->
                   <div class="modal-content">
                     <div class="modal-header">
                       <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title">Modal Header</h4>
+                      <h4 class="modal-title">Ajouter un album</h4>
                     </div>
                     <div class="modal-body">
-                      <p>Some text in the modal.</p>
+                    <c:import url="addForm.jsp"/>
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -225,8 +283,8 @@
 
       <!-- FOOTER -->
       <footer class="container">
-        <p class="float-end"><a href="#">Back to top</a></p>
-        <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <!--  <p class="float-end"><a href="#">Back to top</a></p>-->
+        <p style="text-align: center">&copy; MGLSI Tous droits reserves &middot; <a href="#"></a> &middot; <a href="#"></a></p>
       </footer>
     </main>
 
@@ -235,6 +293,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-      
+    <script src="js/add-album.js"></script>
   </body>
 </html>

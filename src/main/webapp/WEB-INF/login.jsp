@@ -18,7 +18,9 @@
     <div class="container-fluid">
         <div class="row no-gutter">
             <!-- The image half -->
-            <div class="col-md-6 d-none d-md-flex bg-image"></div>
+            <div style="margin-top: 5%; margin-bottom: 5%; margin-left: 0%" class="col-md-6 d-none d-md-flex bg-image">
+            
+            </div>
     
     
             <!-- The content half -->
@@ -75,7 +77,7 @@
                                           <form role="form" method="post">
                                             <div class="form-group">
                                               <label for="username">Nom d'utilisateur</label>
-                                              <input type="text" name="username" placeholder="Jason Doe" required class="form-control">
+                                              <input type="text" name="username" placeholder="Login" required class="form-control">
                                             </div>
 
                                             <div class="form-group">
@@ -130,13 +132,13 @@
                                                 <c:if test="${empty form.erreurs.username}">
                                                     <div class="form-group">
                                                         <label for="username">Nom d'utilisateur</label>
-                                                        <input type="text" name="username" placeholder="Jason Doe" required class="form-control" value="${form.user.login }">
+                                                        <input type="text" name="username" placeholder="Nom d'utilisateur" required class="form-control" value="${form.user.login }">
                                                       </div>
                                                 </c:if>
                                                 <c:if test="${!empty form.erreurs.username}">
                                                     <div class="form-group">
                                                         <label for="username" class="text-danger">Nom d'utilisateur</label>
-                                                        <input type="text" name="username" placeholder="Jason Doe" required class="form-control is-invalid" value="${form.user.login }">
+                                                        <input type="text" name="username" placeholder="Nom d'utilisateur" required class="form-control is-invalid" value="${form.user.login }">
                                                         <small id="passwordHelp" class="text-danger">
                                                             <c:out value="${form.erreurs.username }"/>
                                                         </small> 
@@ -147,13 +149,13 @@
                                                 <c:if test="${empty form.erreurs.password }">
                                                     <div class="form-group">
                                                         <label for="password">Mot de passe</label>
-                                                        <input type="password" name="password" placeholder="password" required class="form-control">
+                                                        <input type="password" name="password" placeholder="Mot de passe" required class="form-control">
                                                     </div>
                                                 </c:if>
                                                 <c:if test="${!empty form.erreurs.password }">
                                                     <div class="form-group">
                                                         <label for="password" class="text-danger">Mot de passe</label>
-                                                        <input type="password" name="password" placeholder="password" required class="form-control is-invalid">
+                                                        <input type="password" name="password" placeholder="Mot de passe" required class="form-control is-invalid">
                                                         <small id="passwordHelp" class="text-danger">
                                                             <c:out value="${form.erreurs.password }"/>
                                                         </small> 
@@ -164,7 +166,7 @@
                                                 <c:if test="${empty form.erreurs.password }">
                                                     <div class="form-group">
                                                         <label for="passwordConfirm">Confirmer mot de passe</label>
-                                                        <input type="password" name="passwordConfirm" placeholder="password" required class="form-control" >
+                                                        <input type="password" name="passwordConfirm" placeholder="Confirmation" required class="form-control" >
                                                     </div>
                                                 </c:if>
                                                 <c:if test="${!empty form.erreurs.password }">
@@ -177,7 +179,7 @@
                                                     </div>
                                                 </c:if>
                                                 
-                                                <button type="submit" class="subscribe btn btn-primary btn-block rounded-pill shadow-sm"> Confirm  </button>
+                                                <button type="submit" class="subscribe btn btn-primary btn-block rounded-pill shadow-sm"> Enregistrer  </button>
                                             </form>
                                         </div>
                                         <!-- End -->

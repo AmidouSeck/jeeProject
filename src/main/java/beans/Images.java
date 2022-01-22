@@ -81,8 +81,8 @@ public class Images {
 	public String getDateCreation() {
 		return dateCreation;
 	}
-	public void setDateCreation(String dateXreation) {
-		this.dateCreation = dateXreation;
+	public void setDateCreation(String dateCreation) {
+		this.dateCreation = dateCreation;
 	}
 	public String getDateMiseAjour() {
 		return dateMiseAjour;

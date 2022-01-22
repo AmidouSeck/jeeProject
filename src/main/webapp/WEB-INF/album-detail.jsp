@@ -28,7 +28,7 @@
     
         <!-- Bootstrap core CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     
         <style>
           .bd-placeholder-img {
@@ -111,7 +111,7 @@
               <div class="col-lg-6 col-md-8 mx-auto">
                 
                 <h1 class="fw-light"><c:out value="${album.theme }"/></h1>
-                <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+                <p class="lead text-muted">Toutes les images ${album.theme } sont disponibles ici.</p>
                 <p>
                   <!-- <a href="#" class="btn btn-primary my-2">Main call to action</a>
                   <a href="#" class="btn btn-secondary my-2">Secondary action</a> -->
@@ -205,7 +205,7 @@
                                       />
                                       <div class="hover-overlay"></div>
                                       <div class="hover-2-content px-5 py-4">
-                                          <h3 class="hover-2-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">Image </span>Caption</h3>
+                                          <h3 class="hover-2-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light"><c:out value="${image.titre }"/></span></h3>
                                           <p class="hover-2-description text-uppercase mb-0"><c:out value="${image.description }"/></p>
                                       </div>
                                     </div>
@@ -283,13 +283,99 @@
 
             <!-- </div> -->
         </div>
+        
+         <button style="position: fixed;
+  bottom: 8%;
+  right: 3%;
+  border-radius: 100%;
+  
+  width: 60px;
+  height: 60px;
+
+  -webkit-animation: breathing 2s ease-out infinite normal;
+  animation: breathing 2s ease-out infinite normal;
+  font-family:'Lantinghei SC';
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  @-webkit-keyframes breathing {
+0% {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+25% {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+60% {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+100% {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+}
+
+@keyframes breathing {
+0% {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+25% {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+60% {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+100% {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+} " class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal">
+                <i  class="fa fa-plus"></i>
+                
+            </button>
+       
+       <div id="imageModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+              
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Ajouter une image dans l'album</h4>
+                    </div>
+                    <div class="modal-body">
+                    <c:import url="addImage.jsp">
+                    <c:param name="id" value="${album.id }" />
+                    </c:import>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+              
+                </div>
+              </div>
 
         <hr class="featurette-divider">
     
       <!-- FOOTER -->
       <footer class="container">
-        <p class="float-end"><a href="#">Back to top</a></p>
-        <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <!--<p class="float-end"><a href="#">Back to top</a></p>-->
+        <p style="text-align:center">&copy; MGLSI Tous droits reserves &middot; <a href="#"></a> &middot; <a href="#"></a></p>
       </footer>
     </main>
     
@@ -298,6 +384,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
       <script src="js/album-detail.js"></script>
+      <script src="js/addImage.js"></script>
     </body>
 </html>
     

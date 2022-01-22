@@ -49,7 +49,7 @@
     <header>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="<c:url value="/"/>">E-Album</a>
+          <a class="navbar-brand" href="<c:url value="/"/>">MGLSI Album Photo</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -109,36 +109,36 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
-            <img src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/12/2017/03/Port_2_Background.jpg" alt="">
+            <img src="https://cdn.pixabay.com/photo/2015/07/27/20/16/book-863418_1280.jpg" alt="">
 
             <div class="container">
               <div class="carousel-caption">
-                <h1>Example headline.</h1>
-                <p>Some representative placeholder content for the first slide of the carousel.</p>
+                <h1>MGLSI Album Photo</h1>
+                <p>Decouvrez MGLSI Album Photo</p>
                 
               </div>
             </div>
           </div>
           <div class="carousel-item">
             <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
-            <img src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/12/2017/03/Port_2_Background.jpg" alt="">
+            <img src="https://cdn.pixabay.com/photo/2014/11/03/10/44/camera-514992_1280.jpg" alt="">
 
             <div class="container">
               <div class="carousel-caption">
-                <h1>Another example headline.</h1>
-                <p>Some representative placeholder content for the second slide of the carousel.</p>
+                <h1>MGLSI Album Photo</h1>
+                <p>Creer vos albums personnalises sans limites avec une large gamme d'images de qualite</p>
                 
               </div>
             </div>
           </div>
           <div class="carousel-item">
             <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
-            <img src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/12/2017/03/Port_2_Background.jpg" alt="">
+            <img src="https://cdn.pixabay.com/photo/2018/07/17/14/43/banner-3544296_1280.jpg" alt="">
 
             <div class="container">
               <div class="carousel-caption">
-                <h1>Another example headline.</h1>
-                <p>Some representative placeholder content for the second slide of the carousel.</p>
+                <h1>MGLSI Album Photo</h1>
+                <p>Inscrivez-vous pour decouvrir toutes nos fonctionnalites</p>
                 
               </div>
             </div>
@@ -181,10 +181,10 @@
                         <p class="card-text"><a href="albums?id=<c:out value="${album.id }"/>"><c:out value="${album.theme }"/></a></p>
                         <div class="d-flex justify-content-between align-items-center">
                           <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Voir</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Modifier</button>
                           </div>
-                          <small class="text-muted">9 mins</small>
+                          <small class="text-muted">il y a 5 jours</small>
                         </div>
                       </div>
                     </div>
@@ -201,7 +201,7 @@
       <!-- FOOTER -->
       <footer class="container">
         <p class="float-end"><a href="#">Back to top</a></p>
-        <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p style="text-align:center">&copy; MGLSI Tous droits reserves &middot; <a href="#"></a> &middot; <a href="#"></a></p>
       </footer>
     </main>
 

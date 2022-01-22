@@ -9,9 +9,9 @@ public class Database {
 
 	static
 	{
-		String url = "jdbc:mysql://localhost:3306/projet-jee";
+		String url = "jdbc:mysql://localhost:3306/albumPhoto";
 		String user = "root";
-		String password = "";
+		String password = "password";
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			connection = DriverManager.getConnection(url, user, password);
