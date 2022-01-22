@@ -7,8 +7,7 @@ L’objectif de ce projet est de mettre en œuvre les compétences acquises dans
 ## Pour commencer
 ##Lien du tutoriel Youtube
 
-https://youtu.be/-BYpdMQ6o40
-
+https://www.youtube.com/watch?v=XxdN5ReAeWM
 
 ### Contenu du projet
 On désire concevoir une application Web qui gère des albums photos d’utilisateurs. Un visiteur du site pourra, sans être authentifié, voir les photos qui sont en accès libre. Les photos sont placées dans des albums permettant de grouper les photos d’un même thème (vacance, sport, etc.).
